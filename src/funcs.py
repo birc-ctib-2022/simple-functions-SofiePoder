@@ -19,8 +19,8 @@ def prod2(b):
     """
     Get a global a and write to a local c before computing prod(a, b, c)
 
-    >>> prod2(42)
-    42
+    >>> prod2(2)
+    2
     """
     c = a
     return prod(a,b,c)
@@ -37,8 +37,10 @@ def longest(x, y):
     """
     if len(x) > len(y):
         return x
-    else:
+    elif len(x) < len(y):
         return y
+    else:
+        return "they are of the same length"
 ...
 
 from math import sqrt
